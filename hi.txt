@@ -2,3 +2,8 @@ day la 1 file text cua khoa_example repo, i changed something in my main repo
 i write something in my local repo
 
 i try to fix file from my local 
+
+
+
+
+i add my name Khoa
