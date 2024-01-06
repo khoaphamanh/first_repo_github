@@ -1,0 +1,48 @@
+#download branch to local
+git fetch origin feature
+git checkout feature
+
+#how to add, commit and push only file1.txt from branch feature to main ? example i changed a lot in feature but im sure that file1.txt is fine to add it to main
+git fetch
+git checkout main
+git pull
+git checkout feature
+git checkout main
+git checkout feature file1.txt
+git add file1.txt
+git commit -m "Add file1.txt from feature branch to main"
+git push origin main
+
+#merge
+git checkout main
+git pull
+git checkout main
+git merge sub
+git push origin main
+
+#add a file in a branch
+git checkout branch -- file.txt
+git commmit -m "add"
+git push origin main
+
+#revert an old commit, old version of a file (khong khuyen khich)
+git log 
+"choose a commit id"
+git revert commit_id
+git commit -m ""
+git push origin main
+
+#revert back to new commit, or get back the previous version of repo ( this will delete the revert commit above)
+git log
+git reset --hard <newer-commit-id>
+git push --force origin main
+
+#revert back to commit and creat a branch on it
+git log
+git checkout commit_id
+git checkout -b old_version_branch commit_id
+git push origin old_version_branch
+
+#delete a branch 
+git git branch -d <branch-name>
+git push origin --delete <branch-name>
