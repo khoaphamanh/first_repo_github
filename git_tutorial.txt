@@ -1,3 +1,7 @@
+#create a requirements.txt file an install
+conda list --explicit > requirements.txt
+conda install --file requirements.txt
+
 #download branch to local
 git fetch origin feature
 git checkout feature
@@ -46,3 +50,7 @@ git push origin old_version_branch
 #delete a branch 
 git git branch -d <branch-name>
 git push origin --delete <branch-name>
+
+#delte a file in git but not in local
+git rm --cached <filename>
+git commit -m "Remove <filename> from the repository"
