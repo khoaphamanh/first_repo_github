@@ -2,6 +2,10 @@
 conda create --name your_vitual_enviroment python=3.11.7
 (mac apple silicone should install mac intel conda and install the package with pip. this will avoid the conflict with mac intel while install the package with requirements.txt)
 
+#uninstall conda
+rm -rf ~/anaconda3
+rm -rf ~/.condarc ~/.conda ~/.continuum
+
 #create a requirements.txt file an install
 conda list --explicit > requirements.txt
 conda install --file requirements.txt
