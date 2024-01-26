@@ -41,12 +41,17 @@ git checkout branch -- file.txt
 git commmit -m "add"
 git push origin main
 
-#revert an old commit, old version of a file (khong khuyen khich)
+#revert an old commit, old version of a file, that will automatic commit (khong khuyen khich)
 git log 
 "choose a commit id"
 git revert commit_id
 git commit -m ""
 git push origin main
+
+#see a file in the previous commit
+git log 
+"choose a commit id"
+git checkout commit_id -- file 
 
 #revert back to new commit, or get back the previous version of repo ( this will delete the revert commit above)
 git log
