@@ -58,3 +58,8 @@ git commit -m "Remove <filename> from the repository"
 
 #go back to previous saved version of a file in a git
 git checkout -- file.txt
+
+# add new remote to existed folder
+git init
+git remote add origin url_link
+git pull origin main
