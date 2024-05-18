@@ -1,3 +1,9 @@
+#create a new branch
+git checkout -b new_branch
+git add file
+git commit -m "add new file to new branch"
+git push origin new_branch
+
 #download branch to local
 git fetch origin feature
 git checkout feature
